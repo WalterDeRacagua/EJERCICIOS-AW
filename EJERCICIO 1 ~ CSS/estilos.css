@@ -23,6 +23,7 @@ p::first-letter {
   font-size: 2em;
 }
 
+/* No es necesario pero por practicar y que no quede el título tan soso. */
 #principal {
   text-align: center;
   margin: 20px;
