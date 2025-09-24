@@ -1,0 +1,66 @@
+body::selection {
+  background-color: #9a3;
+  color: #fff;
+}
+
+h2 + p {
+  font-weight: bold;
+}
+
+/* Hover para cuando pasemos el raton, focus para cuando navegemos en general. Importante para accesibilidad moviendonos con el tabulador*/
+.leer-mas:hover,
+.leer-mas:focus {
+  color: #e44;
+}
+
+h2::before {
+  content: "🌟";
+}
+
+p::first-letter {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+#principal {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  background: #48e;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #888;
+  text-shadow: 1px 2px 3px #888;
+}
+
+.noticia {
+  padding: 15px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #48e;
+}
+
+/* Para las páginas pares */
+.noticia:nth-child(even) {
+  background-color: #888;
+}
+
+.noticia:nth-child(odd) {
+  background-color: #eee;
+}
+
+/*EJERCICIOS DE ACCESIBILIDAD
+
+ • ¿Qué sucede si el icono decorativo aporta  información importante y no solo estética?
+
+    Añadiría alt al logo para dar esa información al usuario.
+
+ • ¿Cómo ayudas a los usuarios que navegan con  teclado a saber en qué enlace están?
+
+    Dandole un estilo visible al estado :focus, cómo hemos hecho en este caso para los enlaces.
+
+ • ¿Qué problema existe si el único criterio para diferenciar noticias o enlaces es el color?
+
+    Que los usuarios que tengan problemas visuales, como daltonismo o poca visión (estén ciegos) no podrán diferenciarlos correctamente.
+*/
