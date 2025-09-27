@@ -32,6 +32,9 @@
     grid-area: main;
     background-color: lightgreen;
     text-align: center;
+    /* Para que se vea como en el ejercicio
+     */
+    margin: 0 10%;
 }
 
 .art1{
