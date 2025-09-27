@@ -1,0 +1,82 @@
+.container{
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "opciones main articulos"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    gap: 5px;
+    height: 100vh;
+}
+
+.header{
+    display: grid;
+    grid-template-areas: 
+        "logo header header";
+    grid-template-columns: 1fr 5fr;    
+    grid-area: header;
+    background-color: lightblue;
+    text-align: center;
+    gap: 5px;
+}
+
+.logo{
+    grid-area: logo;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+.opciones{
+    grid-area: opciones;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.main{
+    grid-area: main;
+    background-color: lightgreen;
+    text-align: center;
+}
+
+.articulos{
+    display: grid;
+    grid-template-areas:
+        "art1"
+        "art2";
+    grid-area: articulos;
+    background-color: lightpink;
+    text-align: center;
+    gap: 5px;
+}
+
+.art1{
+    grid-area: art1;
+    background: lightseagreen;
+}
+
+.art2{
+    grid-area: art2;
+    background: lightsteelblue;
+}
+
+.panelExtra{
+    display: none;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.identificacion{
+    display: none;
+}
