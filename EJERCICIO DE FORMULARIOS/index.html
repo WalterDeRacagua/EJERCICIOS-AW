@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <header>
+      <h1>Suscripción a la Revista</h1>
+    </header>
+    <main>
+      <form action="" method="POST">
+        <fieldset class="fieldset-datos-personales">
+          <legend>Datos personales</legend>
+          <div class="nombre-apellidos">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" placeholder="Jose" />
+            <label for="primer-apellido"> Primer apellido: </label>
+            <input type="text" id="primer-apellido" placeholder="González" />
+            <label for="segundo-apellido"> Segundo apellido: </label>
+            <input type="text" id="segundo-apellido" placeholder="Pérez" />
+          </div>
+          <div class="datos-personales">
+            <label for="direccion"> Dirección: </label>
+            <input
+              type="text"
+              id="direccion"
+              placeholder="calle o plaza, número y piso"
+            />
+            <br />
+            <label for="email"> e-mail: </label>
+            <input type="email" id="email" placeholder="@" />
+            <br />
+            <label for="contraseña"> contraseña: </label>
+            <input type="password" id="contraseña" />
+            <br />
+            <label
+              >sexo
+              <br />
+              <input type="radio" name="sexo" value="M" /> Varón
+              <br />
+              <input type="radio" name="sexo" value="F" /> Mujer
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset-estudios">
+          <legend class="legend-estudios">Nivel de estudios e intereses</legend>
+          <!-- Contenedor de nivel de estudios (por si aumentamos algo en el futuro) -->
+          <div class="container-estudios">
+            <label for="nivel-estudios">Nivel de estudios</label>
+            <br />
+            <select name="nivel-estudios" id="nivel-estudios">
+              <option value="1">Certificado escolar</option>
+              <option value="2">Bachillerato</option>
+              <option value="3">Grado</option>
+              <option value="3">Master</option>
+            </select>
+          </div>
+          <br />
+          <div class="container-intereses">
+            <label>
+              Recibir artículos sobre los siguientes temas:
+              <br />
+              <input type="checkbox" name="musica" /> Música
+              <br />
+              <input type="checkbox" name="deportes" /> Deportes
+              <br />
+              <input type="checkbox" name="cine" /> Cine
+              <br />
+              <input type="checkbox" name="libros" /> Libros
+              <br />
+              <input type="checkbox" name="ciencia" /> Ciencia
+              <br />
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset-revista">
+          <legend class="legend-revista">Datos sobre la revista</legend>
+          <label for="frecuencia">
+            Frecuencia con la que se recibirá la revista:</label
+          >
+          <br />
+          <select name="frecuencia" id="frecuencia">
+            <option value="1">semanal</option>
+            <option value="2">mensual</option>
+            <option value="3">diario</option>
+          </select>
+          <br />
+          <p>
+            puedes mandar tu artículo sobre cualquier tema de los que tratamos.
+            Nosotros lo valoraremos para que pueda ser publicado.
+          </p>
+          <p>
+            mandar artículo:
+            <button type="button">Seleccionar archivo</button>
+            Ningun archivo selecc.
+          </p>
+          <label for="opinion">
+            Si deseas mandar simplemente una opinion o comentario escribelo
+            aquí.</label
+          >
+          <br />
+          <textarea
+            name="opinion"
+            id="opinion"
+            placeholder="Escribe tu comentario"
+            class="opinion-area"
+          ></textarea>
+        </fieldset>
+        <fieldset class="fieldset-reinicio">
+            <legend class="legend-reinicio"> Comenzar de nuevo </legend>
+            <p> Borrar todos los datos del formulario y volver a empezar: <button type="reset"> borrar todo</button>  </p>
+           
+        </fieldset>
+        <fieldset class="fieldset-enviar">
+            <legend class="legend-enviar">enviar </legend>
+                <p>Enviar formulario por correo electrónico. Al pulsar el botón se abrirá la página de envío de correo: en esa página pulsa enviar: </p>
+                <a href="mailto:sesanc15@ucm.es"> <button type="button"> enviar por correo</button></a>
+        </fieldset>
+      </form>
+    </main>
+    <!-- En este caso tenemos un footer vacío. No se si es mejor no ponerlo o dejarlo -->
+    <footer></footer>
+  </body>
+</html>
